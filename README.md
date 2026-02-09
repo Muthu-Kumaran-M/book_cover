@@ -1,5 +1,5 @@
-# Ex.05 Book Front Cover Page Design
-# Date:
+# Ex.06 Book Front Cover Page Design
+# Date: 07.02.2026
 # AIM:
 To design a book front cover page using HTML and CSS.
 
@@ -29,6 +29,90 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:
-# OUTPUT:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Cover</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      margin: 0;
+      background:rgb(86, 125, 149);
+      font-family: "Georgia", serif;
+    }
+
+    .book-cover {
+      width: 320px;
+      height: 480px;
+      background:url("Book\ Aesthetic\ Cover\ Photo.png") no-repeat center center/cover;
+      border: 3px solid #222;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+      color:black;
+      position:relative;
+      padding: 20px;
+    }
+
+    .book-cover h1 {
+      font-size: 26px;
+      margin-top: 50px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .book-cover h2 {
+      font-size: 18px;
+      font-style: italic;
+      margin: 10px 0 40px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .author {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform:translateX(-50%);
+    }
+
+    .author img {
+      width: 80px;
+      height: 80px;
+      border-radius: 1%;
+      border: 20px solid #ffffffb3;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    .author p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="book-cover">
+    <h1>THE WINGS OF FIRE</h1>
+    <h2>WINGS OF FIRE DOES NOT A SINGLE</h2>
+    <div class="author">
+      <img src="C:\Users\acer\Desktop\exp6\book_cover\admin\bookapp\static\author.png" alt="Author">
+      <p>BY A.P.J.ABDUL KALAM</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+```
+# OUTPUT: 
+![alt text](screenshot.jpg)
+
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
